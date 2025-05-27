@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="MyReports">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../Program Files/Jaspersoft/Jaspersoft Studio-6.20.5/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
+    <path id="JasperReports Library.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-castor-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-chart-customizers-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-chart-themes-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-fonts-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-functions-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-metadata-6.20.5.jar"/>
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/67/0/.cp/lib/jasperreports-xalan-6.20.5.jar"/>
+    </path>
+    <path id="Jaspersoft Server Library.libraryclasspath">
+        <pathelement location="${ECLIPSE_HOME}configuration/org.eclipse.osgi/43/0/.cp/lib/js-extra-classes.jar"/>
+    </path>
+    <path id="MyReports.classpath">
+        <path refid="JasperReports Library.libraryclasspath"/>
+        <path refid="Jaspersoft Server Library.libraryclasspath"/>
+    </path>
+    <target name="init"/>
+    <target name="clean"/>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
