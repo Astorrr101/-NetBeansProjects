@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="facturaVentas" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7e24b1e3-91bf-489f-83f7-e9dcda2fd292">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="facturas"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from facturaventas]]>
+	</queryString>
+	<field name="id_factura_venta" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_factura_venta"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_factura_venta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<field name="fecha_venta" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fecha_venta"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha_venta"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<field name="cliente_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cliente_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="cliente_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<field name="vendedor_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="vendedor_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="vendedor_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<field name="SBT" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SBT"/>
+		<property name="com.jaspersoft.studio.field.label" value="SBT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<field name="ISV" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ISV"/>
+		<property name="com.jaspersoft.studio.field.label" value="ISV"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<field name="total" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="total"/>
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturaventas"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="86" height="30" uuid="98633c8a-f68f-40f6-ba56-ed73d9e62104">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49707d90-bc90-4593-8a68-4c739c532967"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[id_factura_venta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="86" y="0" width="81" height="30" uuid="35aa2ead-727f-413e-93f1-2f592ed20467">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="076b4627-3f2e-4e26-92d8-246024baabd8"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[fecha_venta]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="0" width="81" height="30" uuid="97b91b05-101f-467d-a17f-59492018b0c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0733d0ea-baed-4212-88f8-8553a3415f1d"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[cliente_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="0" width="81" height="30" uuid="e19a741a-db71-4a90-a5c1-0c3c282afe5f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="33cbcb0b-2f2d-46f7-aa7f-a6d81f600782"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[vendedor_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="329" y="0" width="81" height="30" uuid="81ff39f0-02e5-451a-b686-c89268f783a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0c480628-9f48-4ddb-a43b-951575bd1ccb"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SBT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="410" y="0" width="81" height="30" uuid="9406f3fc-5e8e-4165-9308-4c309d9821da">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23a4c025-6dc4-4bd6-92b9-8bfb9bea8af6"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ISV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="491" y="0" width="81" height="30" uuid="de8aea6c-9d47-418c-bd64-d32d54e005bf">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c27daa67-1b9d-46e1-99a6-3f0b00e91809"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="86" height="30" uuid="43394fa9-5187-4dd3-b241-b6538c721fb9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49707d90-bc90-4593-8a68-4c739c532967"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_factura_venta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="86" y="0" width="81" height="30" uuid="16ae5e52-8e4c-457a-b8d3-f93f09846351">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="076b4627-3f2e-4e26-92d8-246024baabd8"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fecha_venta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="167" y="0" width="81" height="30" uuid="80ee26e2-d0e1-4482-9c98-4bd9d00dfe53">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0733d0ea-baed-4212-88f8-8553a3415f1d"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cliente_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="248" y="0" width="81" height="30" uuid="1a01eccf-571f-4b14-ad9a-158e4b196d95">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="33cbcb0b-2f2d-46f7-aa7f-a6d81f600782"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{vendedor_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="329" y="0" width="81" height="30" uuid="b8055543-a87a-4025-8d42-9bbd6afae310">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0c480628-9f48-4ddb-a43b-951575bd1ccb"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{SBT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="410" y="0" width="81" height="30" uuid="fbdc967b-f815-4910-bc32-4e660d650cff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23a4c025-6dc4-4bd6-92b9-8bfb9bea8af6"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ISV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="491" y="0" width="81" height="30" uuid="5a3a9dc7-d42a-4369-8570-f13953d98b4d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c27daa67-1b9d-46e1-99a6-3f0b00e91809"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

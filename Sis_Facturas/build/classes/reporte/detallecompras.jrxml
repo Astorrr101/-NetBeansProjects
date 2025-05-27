@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="detallecompras" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="38c09ed5-72b0-4bc8-b80d-9463c3b3ae48">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="facturas"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from detallefacturacompras]]>
+	</queryString>
+	<field name="id_detalle_compra" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_detalle_compra"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_detalle_compra"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallefacturacompras"/>
+	</field>
+	<field name="factura_compra_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="factura_compra_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="factura_compra_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallefacturacompras"/>
+	</field>
+	<field name="producto_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="producto_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="producto_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallefacturacompras"/>
+	</field>
+	<field name="cantidad" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="cantidad"/>
+		<property name="com.jaspersoft.studio.field.label" value="cantidad"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallefacturacompras"/>
+	</field>
+	<field name="precio" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="precio"/>
+		<property name="com.jaspersoft.studio.field.label" value="precio"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallefacturacompras"/>
+	</field>
+	<field name="SBT" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SBT"/>
+		<property name="com.jaspersoft.studio.field.label" value="SBT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="detallefacturacompras"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="97" height="30" uuid="208f81a1-ef45-48d1-9863-f7dd0a770edd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13246fce-723a-42e1-b2a9-2e046f381130"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[id_detalle_compra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="0" width="95" height="30" uuid="63499caa-758d-40e0-ab0c-1b607fa06bc2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="393bcd77-0176-4749-8c26-fae9a5345a65"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[factura_compra_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="0" width="95" height="30" uuid="48690080-a1e7-409f-8db3-7a31a56b0913">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cd609246-c973-4cb3-aa71-629dd6be17ce"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[producto_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="0" width="95" height="30" uuid="1d6dee2e-04f4-4823-8548-2399cec9701d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="afc13384-bc9b-4bf4-b30d-edab1853fde3"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[cantidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="0" width="95" height="30" uuid="4fff6178-b98a-4206-aa00-a4597aea287f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="855e0ba0-254a-4efb-a49b-6e0957e1f607"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[precio]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="0" width="95" height="30" uuid="b09a686f-6bf3-4c07-9220-51ef3c3a99f3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6229c6b9-1545-44b6-ad4b-5b1e31e99e41"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SBT]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="1" width="97" height="30" uuid="6eed7f7c-7315-44d6-a6ba-2d93851715f5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="13246fce-723a-42e1-b2a9-2e046f381130"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_detalle_compra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="1" width="95" height="30" uuid="73af861c-af94-4ac0-a4e2-ce2bfc43b5fa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="393bcd77-0176-4749-8c26-fae9a5345a65"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{factura_compra_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="192" y="1" width="95" height="30" uuid="0dd9aae8-81fd-40bf-a534-15b7e571c29f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cd609246-c973-4cb3-aa71-629dd6be17ce"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{producto_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="1" width="95" height="30" uuid="1a2b7f4c-f96a-4516-886a-7060f5ca805a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="afc13384-bc9b-4bf4-b30d-edab1853fde3"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{cantidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="1" width="95" height="30" uuid="fd43a56f-75f3-4da7-8aab-b0708738b6ff">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="855e0ba0-254a-4efb-a49b-6e0957e1f607"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{precio}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="1" width="95" height="30" uuid="0124a5f5-698d-4806-ba07-c2f549af2186">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6229c6b9-1545-44b6-ad4b-5b1e31e99e41"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{SBT}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

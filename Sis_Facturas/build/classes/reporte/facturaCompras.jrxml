@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="facturaCompras" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="33560b23-3385-47d3-be78-db24e09c669c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="facturas"/>
+	<property name="com.jaspersoft.studio.data.sql.tables">
+		<![CDATA[ZmFjdHVyYWNvbXByYXMgLDE1LDE1LDM4Y2QzMGNkLTMyZDktNGEzNC1hYmUxLWYyNmViYmRmNzFm
+Nzs=]]>
+	</property>
+	<queryString>
+		<![CDATA[SELECT *
+FROM facturacompras]]>
+	</queryString>
+	<field name="id_factura_compra" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id_factura_compra"/>
+		<property name="com.jaspersoft.studio.field.label" value="id_factura_compra"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacompras"/>
+	</field>
+	<field name="fecha_compra" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="fecha_compra"/>
+		<property name="com.jaspersoft.studio.field.label" value="fecha_compra"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacompras"/>
+	</field>
+	<field name="proveedor_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="proveedor_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="proveedor_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacompras"/>
+	</field>
+	<field name="SBT" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SBT"/>
+		<property name="com.jaspersoft.studio.field.label" value="SBT"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacompras"/>
+	</field>
+	<field name="ISV" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ISV"/>
+		<property name="com.jaspersoft.studio.field.label" value="ISV"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacompras"/>
+	</field>
+	<field name="total" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="total"/>
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="facturacompras"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="97" height="30" uuid="5283ad67-69c3-4459-8ae0-f296a0de5797">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad122fce-9b62-401f-bb79-135982ac301e"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[id_factura_compra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="97" y="0" width="95" height="30" uuid="09f6df0d-6f13-4ed2-a194-8a10aed85fe9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="95c3e8e9-bfd2-409d-9a68-e883c2af704c"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[fecha_compra]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="192" y="0" width="95" height="30" uuid="df1af987-4a77-4412-8f09-83bcd3d10280">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a1afaa7a-2fd3-47bc-a2fa-ec235bde7918"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[proveedor_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="0" width="95" height="30" uuid="3dfae25b-10f4-4333-b0db-cc427d2e913b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8313a7dc-d0eb-4f5d-8fac-5fe343a50633"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[SBT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="0" width="95" height="30" uuid="6a82d7af-0846-46a2-a490-6f19ad532670">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9f26162-7bd2-43a4-994b-3e435b5ff6b3"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[ISV]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="477" y="0" width="95" height="30" uuid="94ce9e6c-a7ad-4aa0-8a62-a9336228a062">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49f8624e-cd83-48f0-a386-09ba07c813ea"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.25"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[total]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="97" height="30" uuid="3b1aa130-fd5b-4118-b1d8-e60e9b03a5c6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ad122fce-9b62-401f-bb79-135982ac301e"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{id_factura_compra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="97" y="0" width="95" height="30" uuid="7de83934-a704-453e-b4f5-beceac6db962">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="95c3e8e9-bfd2-409d-9a68-e883c2af704c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{fecha_compra}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="192" y="0" width="95" height="30" uuid="d1e54532-2da2-4f73-8446-2c5a6f621e98">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a1afaa7a-2fd3-47bc-a2fa-ec235bde7918"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{proveedor_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="287" y="0" width="95" height="30" uuid="2f7b859a-83e7-49fc-91ff-5d22feefc006">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8313a7dc-d0eb-4f5d-8fac-5fe343a50633"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{SBT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="382" y="0" width="95" height="30" uuid="24026c5c-5880-4e56-a19d-8a09301875de">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9f26162-7bd2-43a4-994b-3e435b5ff6b3"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{ISV}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="477" y="0" width="95" height="30" uuid="122ead60-8b19-469d-821a-79c1895e878d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="49f8624e-cd83-48f0-a386-09ba07c813ea"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
